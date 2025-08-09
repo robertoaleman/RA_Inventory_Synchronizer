@@ -1,8 +1,9 @@
 <?php
 
 require_once 'RA_InventorySynchronizer.php';
+/* Author: Roberto Aleman, ventics.com */
 
-// --- Step 1: Sample Data ---
+// Sample Data
 // inv1.csv -> Inventory published on the WEBSITE
 $web_inventory_content = "SKU-001,Laptop Pro,1200.50,0
 SKU-002,Wireless Mouse,25.00,0
@@ -97,8 +98,8 @@ if ($synchronizer->synchronize()) {
     }
 
     // --- Table 2: Actual Warehouse Inventory ---
-    echo "<h2>📦 Actual Warehouse Inventory (Source of Truth)</h2>";
-    echo "<p>This table shows the current and correct status of all products that physically exist in the warehouse.</p>";
+    echo "<h2>📦 Current Warehouse Inventory </h2>";
+    echo "<p>This table shows the current inventory status based on that physically exist in the warehouse.</p>";
     echo "<table>";
     echo "<thead><tr><th>SKU</th><th>Product</th><th>Price</th><th>Curren Stock</th></tr></thead>";
     echo "<tbody>";
