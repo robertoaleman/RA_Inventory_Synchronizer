@@ -2,14 +2,15 @@
 Author: Roberto Aleman, ventics.com
  
 
- 
 Inventory Synchronizer (PHP)
 This PHP script is an utility created to compare a website's inventory with the physical stock in a warehouse, both represented by CSV files. When you run it, it generates a detailed HTML report that highlights discrepancies and the necessary actions to keep your data synchronized.
 
 # How It Works
 Sample Data Creation: The script begins by creating two example CSV files: inv1.csv (website inventory) and inv2.csv (warehouse inventory). This is for demonstration purposes. In a real-world scenario, you would replace these with your actual data files.
 
-* Synchronization Logic: An external class, InventorySynchronizer.php (not included in this script), handles the core logic. This class is responsible for:
+* Synchronization Logic: An external class, RA_InventorySynchronizer.php , handles the core logic.
+
+This class is responsible for:
 
 * Reading and parsing data from both CSV files.
 
