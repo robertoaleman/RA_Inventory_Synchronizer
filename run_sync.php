@@ -1,7 +1,16 @@
 <?php
 
 require_once 'RA_InventorySynchronizer.php';
-/* Author: Roberto Aleman, ventics.com */
+
+/**
+ * RA InventorySynchronizer Class
+ * Author: Roberto Aleman, ventics.com
+ * This class synchronizes two inventory files in CSV format.
+ * It identifies products by a unique SKU, compares their stock levels,
+ * and generates a report of any discrepancies.
+ *
+ * The second inventory file is considered the  source of truth  for the final state.
+ */
 
 // Sample Data
 // inv1.csv -> Inventory published on the WEBSITE
@@ -125,3 +134,4 @@ echo <<<HTML
 </html>
 HTML;
 ?>
+
